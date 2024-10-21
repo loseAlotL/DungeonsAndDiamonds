@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DungeonsAndDiamonds:jar">
+    <output-path>$PROJECT_DIR$/../../Paper Server/plugins</output-path>
+    <root id="archive" name="DungeonsAndDiamonds.jar">
+      <element id="module-output" name="DungeonsAndDiamonds" />
+    </root>
+  </artifact>
+</component>

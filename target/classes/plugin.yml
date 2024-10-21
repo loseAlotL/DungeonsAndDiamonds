@@ -1,0 +1,33 @@
+name: DungeonsAndDiamonds
+version: '1.0-SNAPSHOT'
+main: org.randomlima.dungeonsanddiamonds.DungeonsAndDiamonds
+api-version: '1.20'
+commands:
+  d4:
+    description: Roll a d4.
+    usage: /<command>
+    permission: dnd.dm
+  d6:
+    description: Roll a d6.
+    usage: /<command>
+    permission: dnd.dm
+  d8:
+    description: Roll a d8.
+    usage: /<command>
+    permission: dnd.dm
+  d10:
+    description: Roll a d10.
+    usage: /<command>
+    permission: dnd.dm
+  d12:
+    description: Roll a d12.
+    usage: /<command>
+    permission: dnd.dm
+  d16:
+    description: Roll a d16.
+    usage: /<command>
+    permission: dnd.dm
+  d20:
+    description: Roll a d20.
+    usage: /<command>
+    permission: dnd.dm
