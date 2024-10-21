@@ -45,7 +45,7 @@ public class DiceStuff {
                         if(rollResult == 1) color = "&4";
                         if(rollResult == sides) color = "&2";
 
-                        player.sendTitle(Colorize.format(color+rollResult), roller.getName()+" rolled a d" + sides, 1, 40, 10);
+                        player.sendTitle(Colorize.format(color+rollResult), roller.getName()+" rolled a d" + sides, 1, 60, 10);
                         player.playSound(player, Sound.ENTITY_EXPERIENCE_ORB_PICKUP,1,1);
                     }
                 }

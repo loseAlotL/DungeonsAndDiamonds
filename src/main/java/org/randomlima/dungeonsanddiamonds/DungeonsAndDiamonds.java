@@ -2,6 +2,7 @@ package org.randomlima.dungeonsanddiamonds;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import org.randomlima.dungeonsanddiamonds.Commands.Dice.*;
+import org.randomlima.dungeonsanddiamonds.Listener.DungeoneerClickListener;
 
 public final class DungeonsAndDiamonds extends JavaPlugin {
 
@@ -14,6 +15,8 @@ public final class DungeonsAndDiamonds extends JavaPlugin {
         this.getCommand("d12").setExecutor(new D12Command(this));
         this.getCommand("d16").setExecutor(new D16Command(this));
         this.getCommand("d20").setExecutor(new D20Command(this));
+
+        getServer().getPluginManager().registerEvents(new DungeoneerClickListener(), this);
     }
 
     @Override
