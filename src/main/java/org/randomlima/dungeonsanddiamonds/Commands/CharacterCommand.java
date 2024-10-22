@@ -8,10 +8,10 @@ import org.jetbrains.annotations.NotNull;
 import org.randomlima.dungeonsanddiamonds.DungeonsAndDiamonds;
 import org.randomlima.dungeonsanddiamonds.Managers.CharacterBuilder;
 
-public class DungeoneerCommand implements CommandExecutor {
+public class CharacterCommand implements CommandExecutor {
     private final DungeonsAndDiamonds plugin;
     CharacterBuilder characterBuilder = new CharacterBuilder();
-    public DungeoneerCommand(DungeonsAndDiamonds plugin){
+    public CharacterCommand(DungeonsAndDiamonds plugin){
         this.plugin = plugin;
     }
 
