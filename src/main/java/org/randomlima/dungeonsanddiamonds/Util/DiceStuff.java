@@ -37,7 +37,7 @@ public class DiceStuff {
                 public void run() {
                     for (Player player : roller.getServer().getOnlinePlayers()) {
                         String color;
-                        if(rollResult >= (sides/2)){
+                        if(rollResult > (sides/2)){
                             color = "&a";
                         } else{
                             color = "&c";

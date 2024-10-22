@@ -23,7 +23,6 @@ public class Dungeoneer {
     private int charisma;
 
     private List<ItemStack> inventory;
-    private List<Ability> abilities;
     private Map<String, Integer> skills;
     private List<String> proficiencies;
 
@@ -41,7 +40,6 @@ public class Dungeoneer {
         this.charisma = charisma;
 
         this.inventory = new ArrayList<>();
-        this.abilities = new ArrayList<>();
         this.skills = new HashMap<>();
         this.proficiencies = new ArrayList<>();
 
@@ -78,14 +76,6 @@ public class Dungeoneer {
         return level * 100;
     }
 
-    public void useAbility(String abilityName) {
-        for (Ability ability : abilities) {
-            if (ability.getName().equalsIgnoreCase(abilityName)) {
-                ability.cast(player);
-                break;
-            }
-        }
-    }
 
     public void applyPotionEffect(PotionEffect effect) {
         player.addPotionEffect(effect);

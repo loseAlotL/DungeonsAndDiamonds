@@ -6,28 +6,32 @@ commands:
   d4:
     description: Roll a d4.
     usage: /<command>
-    permission: dnd.dm
+    permission: dnd
   d6:
     description: Roll a d6.
     usage: /<command>
-    permission: dnd.dm
+    permission: dnd
   d8:
     description: Roll a d8.
     usage: /<command>
-    permission: dnd.dm
+    permission: dnd
   d10:
     description: Roll a d10.
     usage: /<command>
-    permission: dnd.dm
+    permission: dnd
   d12:
     description: Roll a d12.
     usage: /<command>
-    permission: dnd.dm
+    permission: dnd
   d16:
     description: Roll a d16.
     usage: /<command>
-    permission: dnd.dm
+    permission: dnd
   d20:
     description: Roll a d20.
     usage: /<command>
-    permission: dnd.dm
+    permission: dnd
+  character:
+    description: Create a character
+    usage: /<command>
+    permission: dnd
