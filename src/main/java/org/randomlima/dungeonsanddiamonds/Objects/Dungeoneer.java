@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Dungeoneer {
     private Player player;
     private String name;
-    private PlayClass playClass;
+    private ClassType playClass;
     private int level;
     private int experience;
 
@@ -26,7 +26,7 @@ public class Dungeoneer {
     private Map<String, Integer> skills;
     private List<String> proficiencies;
 
-    public Dungeoneer(Player player, PlayClass playClass, int strength, int dexterity, int intelligence, int wisdom, int charisma) {
+    public Dungeoneer(Player player, ClassType playClass, int strength, int dexterity, int intelligence, int wisdom, int charisma) {
         this.player = player;
         this.name = player.getName();
         this.playClass = playClass;
@@ -127,6 +127,6 @@ public class Dungeoneer {
     }
 
     public static Dungeoneer loadCharacterState(Player player) {
-        return new Dungeoneer(player, PlayClass.FIGHTER, 10, 10, 10, 10, 10); // Example placeholder
+        return new Dungeoneer(player, ClassType.FIGHTER, 10, 10, 10, 10, 10); // Example placeholder
     }
 }

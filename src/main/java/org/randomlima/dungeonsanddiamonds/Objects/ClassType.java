@@ -1,6 +1,6 @@
 package org.randomlima.dungeonsanddiamonds.Objects;
 
-public enum PlayClass {
+public enum ClassType {
     BARBARIAN,
     BARD,
     CLERIC,
