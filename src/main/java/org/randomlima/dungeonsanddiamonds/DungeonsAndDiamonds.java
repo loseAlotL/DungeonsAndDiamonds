@@ -11,10 +11,12 @@ public final class DungeonsAndDiamonds extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        GuitemKeys.guiButton = new NamespacedKey(this, "Guitem-button");
         GuitemKeys.classButton = new NamespacedKey(this, "Guitem-class");
         GuitemKeys.speciesButton = new NamespacedKey(this, "Guitem-species");
         GuitemKeys.skillButton = new NamespacedKey(this, "Guitem-skill");
         GuitemKeys.proficiencyButton = new NamespacedKey(this, "Guitem-proficiency");
+        GuitemKeys.navButton = new NamespacedKey(this, "Guitem-nav");
 
         this.getCommand("d4").setExecutor(new D4Command(this));
         this.getCommand("d6").setExecutor(new D6Command(this));
